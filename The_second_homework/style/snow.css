@@ -1,0 +1,18 @@
+.snow-container {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top:0;
+    left:0;
+}
+
+/* Snowflake CSS */
+.snowflake {
+    position: absolute;
+    top: -10px;
+    color: white;
+    font-size: 1em;
+    opacity: 0.8;
+    user-select: none;
+    pointer-events: none;
+}
