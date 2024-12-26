@@ -27,3 +27,19 @@ function timeUpdate(){
 const timeInterval = setInterval(timeUpdate, 1000);
 
 timeUpdate();
+
+const topButton = document.getElementById("returnToTop");
+
+window.onscroll = ()=>{
+    if(topButton){
+        if(document.body.scrollTop >300 || document.documentElement.scrollTop > 300){
+            topButton.style.opacity = "1";
+        }else{
+            topButton.style.opacity = "0";
+        }
+    }
+}
+
+function topFunction() {
+    window.location.href="#header";
+}

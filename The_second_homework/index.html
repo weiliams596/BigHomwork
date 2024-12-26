@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="style/snow.css">
     <link rel="icon" href="Assets/Image/logo.png">
 </head>
+
 <body id="body">
     <div id="bg-img">
         <img src="Assets/Image/SnowHappyNewYear.jpg" alt="">
@@ -19,7 +21,7 @@
             <a href="index.html"><img src="Assets/Image/logo.png" alt="logo"></a>
         </nav>
         <nav class="center-nav">
-            <a href="#timerSection">Басбет</a>
+            <a href="#header">Басбет</a>
             <a href="#myKnowlege">Менің танымым</a>
             <a href="#aboutMe">Жетістік тер</a>
             <a href="#newYearWishes">Ағылшын</a>
@@ -41,27 +43,33 @@
             </div>
         </section>
         <section id="myKnowlege">
+            <img id="myKnowlegeImg" src="Assets/Image/nextBG.jpg" alt="">
             <div class="IKnowThese">
+                <h1>Менің білетін HTML ға қатысты білімдер:</h1>
                 <img src="Assets/Image/HCJ.png" alt="Html Css JavaScript">
             </div>
         </section>
         <section id="aboutMe">
             <div class="aboutMe">
                 <img src="Assets/Image/oldBigHomeWork.png" alt="">
-                <p></p>
+                <p>Қәзіргедейнгі тбыс</p>
             </div>
         </section>
         <section id="newYearWishes">
             <div class="newYearWishes">
-                <video src="Assets/Video/HappyNewYear.mp4">
-
+                <img src="Assets/Image/video_bg.png" alt="video background">
+                <video src="Assets/Video/HappyNewYear.mp4" controls>
                 </video>
             </div>
         </section>
+        <div id="returnToTop" class="fly-btn-div">
+            <button onclick="topFunction()"><img src="Assets/Icon/arrow-up-square.svg" alt=""></button>
+        </div>
     </main>
     <footer>
         <p>© 2024 Happy New Year All Rights Reserved </p>
     </footer>
     <script src="JS/index.js"></script>
 </body>
+
 </html>

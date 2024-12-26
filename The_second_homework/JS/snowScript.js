@@ -24,7 +24,7 @@ function createSnowflake() {
 }
 
 // Between random intervals, create a snowflake
-setInterval(createSnowflake, 300);
+setInterval(createSnowflake, 100);
 
 // Append animation
 const style = document.createElement('style');
@@ -35,12 +35,31 @@ style.innerHTML = `
             transform: translateX(0);
         }
         30% {
-            transform: translateX(${Math.random() * 200 - 25}px); /* Randomly move the snowflake horizontally */
+            transform: translateX(${Math.random() * 500 - 25}px); /* Randomly move the snowflake horizontally */
         }
         100% {
             top: 100vh;
-            transform: translateX(${Math.random() * 200 - 25}px);
+            transform: translateX(${Math.random() * 500 - 25}px);
         }
     }
 `;
 document.head.appendChild(style);
+
+
+document.addEventListener('mousemove', (e) => {
+    const star = document.createElement('div');
+    star.textContent = '★';
+    star.className = 'star';
+    document.body.appendChild(star);
+    
+    star.style.left = `${e.pageX}px`;
+    star.style.top = `${e.pageY}px`;
+
+    const offsetX = Math.random() * 30 - 15; 
+    const offsetY = Math.random() * 30 - 15; 
+    star.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+
+    setTimeout(() => {
+        star.remove();
+    }, 1000); 
+});
