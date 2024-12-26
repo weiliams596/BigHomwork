@@ -206,7 +206,7 @@ a:hover {
     left: 0;
 }
 
-.newYearWishes video{
+.newYearWishes iframe{
     width: 60%;
     object-fit: cover;
     border: none;
